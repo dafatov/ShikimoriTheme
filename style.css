@@ -8,7 +8,7 @@
   --color-overlay-text-selected: rgba(227, 227, 227, 0.08);
   --color-overlay-text-pressed: rgba(227, 227, 227, 0.12);
   /* Цвет ссылок */
-  /*--color-link: #2196f3;*/
+  --color-link: #2196f3;
   --color-link-hover: #ffac1c;
   --color-link-active: #de8d00;
   /* Основной цвет */
@@ -53,20 +53,6 @@
   --color-rewatching: #384f59;
   --color-completed: #4b533a;
   --color-dropped: #552f2f;
-}
-:root[data-server_time *= "0+"],
-:root[data-server_time *= "2+"],
-:root[data-server_time *= "4+"],
-:root[data-server_time *= "6+"],
-:root[data-server_time *= "8+"] {
-  --color-link: #2196f3;
-}
-:root[data-server_time *= "1+"],
-:root[data-server_time *= "3+"],
-:root[data-server_time *= "5+"],
-:root[data-server_time *= "7+"],
-:root[data-server_time *= "9+"] {
-  --color-link: #2100f3;
 }
 
 
