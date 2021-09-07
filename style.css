@@ -53,6 +53,9 @@
   --color-rewatching: #384f59;
   --color-completed: #4b533a;
   --color-dropped: #552f2f;
+  /* Unknown */
+  --color-info: #66bb6a;
+  --color-success: #0fff0f;
 }
 
 
