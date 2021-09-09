@@ -99,4 +99,36 @@ body:after {
     }
 }
 
+/* Слой с изображениями снега */
+.l-page:after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(1.25px);
+  filter: opacity(25%);
+  pointer-events: none;
 
+  background-image: url(https://raw.githubusercontent.com/dafatov/ShikimoriTheme/main/sakura_500.png),
+                    url(https://raw.githubusercontent.com/dafatov/ShikimoriTheme/main/sakura_400.png),
+                    url(https://raw.githubusercontent.com/dafatov/ShikimoriTheme/main/sakura_300.png);
+  
+  background-size: 250px, 200px, 150px;
+  
+  animation: snow 60s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px,
+                         0px 0px,
+                         0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px,
+                         400px 400px,
+                         300px 300px;
+  }
+}
