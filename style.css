@@ -115,7 +115,7 @@ body:after {
   /* Размер изображений по порядку: */
   /* (размер уменьшен в 2 раза: снежинки больше похожи на точки, чем на  детские рисунки */
   /* (можно удалить) */
-  background-size: 150px, 100px, 75px;
+  background-size: 125px, 100px, 75px;
   /* Скорость анимации: */
   /* (чем больше время, тем медленнее идет снег) */
   animation: snow 45s linear infinite;
@@ -124,14 +124,14 @@ body:after {
 /* Анимация снега */
 @keyframes snow {
   0% {
-    background-position: 0px 0px,
-                         0px 0px,
-                         0px 0px;
+    background-position: 0px 25px,
+                         25px 0px,
+                         25px 25px;
   }
   100% {
     /* (Указан полный размер изображений по прядку, указанному в body:before) */
     background-position: 500px 1000px,
-                         400px 400px,
+                         1400px 400px,
                          300px 300px;
   }
 }
