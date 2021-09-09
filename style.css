@@ -5,6 +5,8 @@
 @import url(https://raw.githubusercontent.com/dafatov/ShikimoriTheme/main/style.css);
 */
 
+@media screen and (min-width: 1px) {}
+
 :root {
   /* Цвета текстов */
   --color-text-primary: #e3e3e3;
@@ -65,24 +67,23 @@
   --color-success: #0fff0f;
 }
 
-
-body {
-  background-attachment: fixed;
+body:after {
+  content: '';
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-}
-body[data-server_time *= "0+"],
-body[data-server_time *= "2+"],
-body[data-server_time *= "4+"],
-body[data-server_time *= "6+"],
-body[data-server_time *= "8+"] {
+  background-color: rgba(var(--menu-back), 0.5);
+  image-rendering: -webkit-optimize-contrast; 
   background-image: url(https://raw.githubusercontent.com/dafatov/ShikimoriTheme/main/EDIT_SkikiBackground.png);
-}
-body[data-server_time *= "1+"],
-body[data-server_time *= "3+"],
-body[data-server_time *= "5+"],
-body[data-server_time *= "7+"],
-body[data-server_time *= "9+"] {
-  background-image: url(https://raw.githubusercontent.com/dafatov/ShikimoriTheme/main/EDIT_SkikiBackground2.png);
 }
 
 .p-profiles .profile-head .c-brief .avatar img {
@@ -100,7 +101,7 @@ body[data-server_time *= "9+"] {
 
 
 /* Слой с изображениями снега */
-body:before {
+.l-page:before {
   content: '';
   position: fixed;
   top: 0;
