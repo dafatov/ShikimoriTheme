@@ -1,3 +1,6 @@
+@import url(https://shiki-theme.web.app/import/main.css);
+@import url(https://raw.githubusercontent.com/kaurkaur/Shikimori/master/CSS/HistoryDates.css);
+
 :root {
   /* Цвета текстов */
   --color-text-primary: #e3e3e3;
